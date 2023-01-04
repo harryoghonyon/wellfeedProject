@@ -197,6 +197,75 @@ table {
     align-items: center;
 }
 
+.img-wrap {
+    position: relative;
+}
+
+.left-cloud {
+    position: absolute;
+    left: auto;
+    top: -3%;
+    right: -2%;
+    bottom: auto;
+    z-index: 1;
+}
+
+.right-cloud {
+    position: absolute;
+    left: -4%;
+    top: auto;
+    right: auto;
+    bottom: -2%;
+}
+/* Styles for mobile devices */
+
+@media screen and (max-width: 479px) {
+    .hero-section {
+        padding-top: 32px;
+    }
+
+    .hero-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero-leftside {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* .hero-img {
+        width: 382px;
+        height: 498.26px;
+    } */
+
+    .hero-heading {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hero-text {
+        display: block;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .left-cloud {
+        max-width: 40%;
+    }
+
+    .right-cloud {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hero-grid {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
 /* End */
 
 /* Stat Section */
@@ -253,6 +322,32 @@ table {
     margin-bottom: 70px;
 }
 
+/* Styles For Mobile Devices */
+
+@media screen and (max-width: 479px) {
+    .stat-margin {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .stat-block {
+        max-width: 220px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stat-text-block {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .stat-grid {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+}
 /* End */
 
 /* 1st Seciton */
@@ -321,6 +416,72 @@ table {
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+.section-image-wrap {
+    position: relative;
+}
+
+.left-cloud {
+    position: absolute;
+    left: auto;
+    top: -3%;
+    right: -2%;
+    bottom: auto;
+    z-index: 1;
+}
+
+.right-cloud {
+    position: absolute;
+    left: -4%;
+    top: auto;
+    right: auto;
+    bottom: -2%;
+}
+
+/* Styles For Mobile Devices */
+
+@media screen and (max-width: 991px) {
+    .first-section-container {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+
+    .first-section-grid {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .first-section-container {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .first-section-container {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .h2-heading {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .section-text {
+        display: block;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .text-block {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 /* End */
