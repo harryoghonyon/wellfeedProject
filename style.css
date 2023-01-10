@@ -67,6 +67,11 @@ table {
     padding: 12px;
 }
 
+.nav-links:hover {
+    transition: .25s ease-in-out;
+    opacity: 0.8;
+}
+
 .navlinks-wrap {
     display: flex;
     flex-direction: row;
@@ -157,8 +162,8 @@ table {
     top: 0;
     margin-left: 0;
     width: 100%;
-    position: fixed;
-    right: -100%;
+    position: absolute;
+    left: -100%;
     top: 80px;
     transition: 0.3s;
 }
@@ -371,6 +376,7 @@ table {
 @media screen and (min-width: 991px) {
     .get-early-access:hover {
         opacity: 0.8;
+        transition: .25s ease-in-out;
     }
 }
 
@@ -913,6 +919,7 @@ img {
 @media screen and (min-width: 991px) {
     .early-access-btn:hover {
         opacity: 0.9;
+        transition: .25s ease-in-out;
     }
 
     .footer-cloud-1 {
