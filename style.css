@@ -387,10 +387,6 @@ table {
         grid-template-rows: auto auto;
     }
 
-    .stat-block {
-        justify-content: flex-start;
-    }
-
     .stat-margin {
         margin-left: 60px;
         margin-right: 60px;
@@ -494,7 +490,7 @@ table {
     flex-direction: row;
     align-items: center;
     text-align: left;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .stat-grid {
@@ -525,6 +521,18 @@ table {
 
 /* Styles For Mobile Devices */
 
+@media screen and (max-width: 991px) {
+    .stat-grid {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .stat-block {
+        justify-content: flex-start;
+    }
+}
+
 @media screen and (max-width: 479px) {
     .stat-margin {
         margin-right: 20px;
@@ -542,13 +550,6 @@ table {
     }
 }
 
-@media screen and (max-width: 991px) {
-    .stat-grid {
-        grid-row-gap: 40px;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-    }
-}
 /* End */
 
 /* 1st Seciton */
